@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <a href="http://jquery.com">jQuery</a>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+    
+    $(function() {
+        $("#evtTarget").on("mouseover mouseleave", highlight);
+    });
+    function highlight(evt) {
+        $("#evtTarget").toggleClass("highlighted");
+    }
+    
+    </script>
+    <style type="text/css">
+    .highlighted {
+        background-color:Red;
+    }
+    </style>
+</head>
+<body>
+    <h1> Binding shit </h1>
+    <p> JQuereyaea </p>
+    <div id="evtTarget">
+        <p> THIS IS THE TARGET </p>
+    </div>
+</body>
+</html>

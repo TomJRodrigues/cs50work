@@ -1,0 +1,29 @@
+0.  An artificially long word said to mean a lung disease 
+    caused by inhaling very fine ash and sand dust
+    
+1.  Get's a resource usage. In speller.c it uses ru_utime, which is the total amount of time
+    spent executing in user mode.
+    
+2.  There are 16 members in struct rusage.
+
+3.  It's less resource intensive to pass a pointer rather than the entire 16-member
+    struct and all their values.
+    
+4.  How main reads words from a file:
+    
+    The for loop operates primarily through fgetc. That iterates through the word, collecting
+    each character until it hits an EOF character, like a space or a newline character. 
+    If we reach a string of characters that includes a digit or if the string is longer than 45 characters,
+    then the string is aborted and the index is reset to 0 and we move onto the next word. Otherwise, fgetc
+    reads each character and checks it against the dictionary, we increment variable words and if the word
+    is misspelled then we increment misspellings and print it to the user
+    
+5.  Using fscanf would make it much harder to reject words with numbers in them.
+
+6.  ???
+
+
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO
