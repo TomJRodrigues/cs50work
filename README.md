@@ -5,6 +5,7 @@ This class was tough, and it was a brutal introduction to Computer Science,
 rather than putzing around with advanced libraries.
 
 Highlights include:
+<hr/>
 PHP based web-store
 hooking into Google Maps API and harnessing AJAX
 pointer math
